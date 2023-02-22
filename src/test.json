@@ -1,0 +1,61 @@
+{
+  "initialState": {
+    "ic-1": {
+      "props": {
+        "className": "form-input",
+        "label": "input number",
+        "title": "input a number"
+      }
+    },
+    "ic-2": {"props": {"disabled": true}},
+    "gd-1": {
+      "props": {
+        "container": true,
+        "spacing": 2
+      }
+    },
+    "gd-2": {
+      "props": {
+        "item": true,
+        "xs": 4
+      }
+    },
+    "gd-3": {
+      "props": {
+        "item": true,
+        "xs": 4
+      }
+    }
+  },
+  "layout": [
+    {
+      "type": "grid",
+      "id": "gd-1",
+      "children": [
+        {
+          "type": "grid",
+          "id": "gd-2",
+          "children": [
+            {
+              "type": "input",
+              "id": "ic-1"
+            }
+          ]
+        },
+        {
+          "type": "grid",
+          "id": "gd-3",
+          "children": [
+            {
+              "type": "input",
+              "id": "ic-2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "reducers": {
+    "ic-1": "function(cid,value,state,_){ const cState = _.get(state,cid);const oState =_.get(state, 'ic-2');const a = parseInt(value); const b = (a + 1) * 12; _.set(cState,'value','' +b); _.set(oState,'value','' + a); }"
+  }
+}
