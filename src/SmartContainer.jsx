@@ -1,38 +1,66 @@
 import React from 'react';
 import _ from 'lodash';
-import { useQuery } from '@tanstack/react-query';
-import SmartForm from './SmartForm';
-import test from './test.json';
+import {
+  Box
+} from '@mui/material'
+import demo from './demo.json';
+import SmartTab from "./SmartTab";
 
+const uiPaths = ["tables","rows","cells","cards"];
 
-const fetchSmartInfo = async () => {
-  /*const res = await fetch("/api/smart/info");
-    return res.json();
-  */
-  const r = new Promise((resolve,reject)=> resolve(test));
-  return r;
+const getTabUi = (data) => {
+  const tabUis = _.get(data, ['form','tabUis']);
+  let chainData = _.chain(tabUis);
+  let path = '';
+  const uiPathsClone =  _.cloneDeep(uiPaths);
+  while(path = uiPathsClone.shift()){
+    chainData = chainData.map(path).flatten();
+  }
+  return chainData
+      .reduce((acc, curr) => {
+        _.set(acc, curr.domId,curr);
+        return acc;
+      },{})
+      .value();
+}
+const getTabData = (data) => _.chain(data)
+    .get(['form','tabDatas'])
+    .map('cards')
+    .flatten()
+    .reduce((acc, curr) => {
+      _.set(acc, curr.domId,curr);
+      return acc;
+    },{})
+    .value();
+
+const buildTabUiList = (data) =>{
+  const tabDatas = _.get(demo,['form','tabDatas']);
+  const tabUis = _.get(demo,['form','tabUis']);
+  const uiPathsClone =  _.cloneDeep(uiPaths);
+  return _.reduce(tabUis,(acc, curr,idx) => {
+    const ui = curr.ui;
+    curr.data = _.get(tabDatas,[idx,'data']);
+    _.extend(curr,_.pick(ui,"showWhen","isHidden","isHiddenSplr"));
+    return _.concat(acc,[curr]);
+  },[]);
 }
 
 function SmartContainer(props) {
-  const {onChange} = props;
-  const query = useQuery({
-    queryKey: ['smartInfo'],
-    queryFn: fetchSmartInfo
-  });
-
-  if (query.loading || query.data == null) {
-    return (<div>
-      loading...
-    </div>);
-  }
-  console.log(query.data);
-  return (<div id="smart-container">
-    <SmartForm
-      key="smart-form"
-      onStateChange={onChange}
-      data={query.data}
-    />
-  </div>);
+  const tabDatas = getTabData(demo);
+  const tabUis = getTabUi(demo);
+  const tabUiList = buildTabUiList(demo);
+  return (<Box sx={{
+    width: '100%',
+  }}>
+    {_.map(tabUiList,(item) => {
+      const domId = _.get(item,['ui','domId']);
+      return (<SmartTab
+          key={domId}
+          tabDatas={tabDatas}
+          tabUis={tabUis}
+          theTab={item}/>);
+    })}
+  </Box>);
 }
 
 export default SmartContainer;

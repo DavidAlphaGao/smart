@@ -1,39 +1,41 @@
 import React from 'react';
+import {Grid} from "@mui/material";
 import _ from 'lodash';
-import { Grid } from '@mui/material';
-import whichComponet from './compType';
+import SmartCell from './SmartCell';
 
 function SmartGrid(props) {
   const {
-    cid,
-    state,
-    getCompState,
-    onChange,
-    onClick,
-    children
+    tabDatas,
+    tabUis,
+    theRow
   } = props;
-  const cState = React.useMemo(() => getCompState(cid, state),
-    [cid, state, getCompState]);
-  const cProps = React.useMemo(() => _.get(cState, 'props', {}), [cState]);
-  return (
-    <Grid {...cProps}>
-      {_.map(children, (item) => {
-        const cchildren = _.get(item, 'children');
-        const ccid = _.get(item, 'id');
-        const ctype = _.get(item, 'type');
-        const CComp = whichComponet(ctype);
-        return <CComp
-          key={`${ctype}-${ccid}`}
-          cid={ccid}
-          onChange={onChange}
-          onClick={onClick}
-          state={state}
-          getCompState={getCompState}
-          children={cchildren}
-        />
-      })}
-    </Grid>
-  );
+  const theCells = _.get(theRow,'cells');
+  const cellsCount = _.get(theRow, ['ui','cellsPerRow']);
+  const gridSize = React.useMemo(() => {
+      try {
+        return Math.ceil(12 / cellsCount);
+      } catch {
+        return 12;
+      }
+  },[cellsCount]);
+  console.log('gridSize', gridSize);
+  if(theCells === undefined) return null;
+  return (<Grid  container>
+    {_.map(theCells,
+        (theCell,idx) => {
+          return (
+              <Grid id={'cell-'+idx}
+                    key={'cell-'+idx}
+                    item
+                    xs={gridSize}
+              >
+                <SmartCell theCell={theCell}
+                           tabDatas={tabDatas}
+                           tabUis={tabUis}
+                />
+              </Grid>);
+        })}
+  </Grid>);
 }
 
 export default SmartGrid;

@@ -1,20 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
 import {
   QueryClient,
   QueryClientProvider
 } from '@tanstack/react-query';
-import SmartConatiner from './SmartContainer';
+import StyledEngineProvider from "@mui/material/StyledEngineProvider";
+import SmartContainer from "./SmartContainer";
+import {Grid, Box, Paper} from "@mui/material";
 
 const queryClient = new QueryClient();
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <SmartConatiner
-        key="smart-container"
-        onChange={(v) => console.log(v)}
-      />
+      <StyledEngineProvider injectFirst>
+        <Grid container={true}>
+          <Grid item xs={1} />
+
+          <Grid item xs={10}>
+            <Paper sx={
+              {paddingTop: '10px'}
+            }>
+              <SmartContainer />
+            </Paper>
+          </Grid>
+          <Grid item xs={1} />
+        </Grid>
+
+      </StyledEngineProvider>
+
     </QueryClientProvider>
   );
 }
