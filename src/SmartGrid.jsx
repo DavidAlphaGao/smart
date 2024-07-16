@@ -5,6 +5,8 @@ import SmartCell from './SmartCell';
 
 function SmartGrid(props) {
   const {
+    state,
+    handleValueUpdate,
     tabDatas,
     tabUis,
     theRow
@@ -18,7 +20,6 @@ function SmartGrid(props) {
         return 12;
       }
   },[cellsCount]);
-  console.log('gridSize', gridSize);
   if(theCells === undefined) return null;
   return (<Grid  container>
     {_.map(theCells,
@@ -29,9 +30,12 @@ function SmartGrid(props) {
                     item
                     xs={gridSize}
               >
-                <SmartCell theCell={theCell}
-                           tabDatas={tabDatas}
-                           tabUis={tabUis}
+                <SmartCell
+                    theCell={theCell}
+                    tabDatas={tabDatas}
+                    tabUis={tabUis}
+                    state={state}
+                    handleValueUpdate={handleValueUpdate}
                 />
               </Grid>);
         })}

@@ -6,6 +6,8 @@ import SmartCaollapseCard from "./SmartCollapseCard";
 
 function SmartTab(props) {
   const {
+    state,
+    handleValueUpdate,
     tabDatas,
     tabUis,
     theTab
@@ -17,7 +19,13 @@ function SmartTab(props) {
     if(!rows.length) return null;
     return _.map(rows,(item) => {
       const domId = _.get(item, ['ui', 'domId']);
-      return (<SmartGrid key={domId} tabDatas={tabDatas} tabUis={tabUis} theRow={item}/>);
+      return (<SmartGrid
+          key={domId}
+          tabDatas={tabDatas}
+          tabUis={tabUis}
+          theRow={item}
+          state={state}
+          handleValueUpdate={handleValueUpdate}/>);
     });
   }
   if(undefined === theTitle && undefined  === theRows) return null;

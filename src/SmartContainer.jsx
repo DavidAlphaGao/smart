@@ -5,6 +5,7 @@ import {
 } from '@mui/material'
 import demo from './demo.json';
 import SmartTab from "./SmartTab";
+import {getCalculators} from "./utils";
 
 const uiPaths = ["tables","rows","cells","cards"];
 
@@ -45,10 +46,24 @@ const buildTabUiList = (data) =>{
   },[]);
 }
 
+const reducerFn = (state,f) => f(state);
+
 function SmartContainer(props) {
   const tabDatas = getTabData(demo);
   const tabUis = getTabUi(demo);
   const tabUiList = buildTabUiList(demo);
+  const [state,dispatch] = React.useReducer(reducerFn,
+      {values: {}, calculators: {}});
+  console.log(state);
+  const handleValueUpdate = React.useCallback((k,v) => {
+    dispatch((s) => {
+      return _.chain(s)
+          .cloneDeep()
+          .set(['values',k],v)
+          .value();
+    });
+  },[dispatch]);
+
   return (<Box sx={{
     width: '100%',
   }}>
@@ -56,9 +71,12 @@ function SmartContainer(props) {
       const domId = _.get(item,['ui','domId']);
       return (<SmartTab
           key={domId}
+          state={state}
+          handleValueUpdate={handleValueUpdate}
           tabDatas={tabDatas}
           tabUis={tabUis}
-          theTab={item}/>);
+          theTab={item}
+      />);
     })}
   </Box>);
 }
