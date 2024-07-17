@@ -1,14 +1,15 @@
-import React, {useCallback} from 'react';
-import _ from 'lodash';
-import {Box, TextField, Tooltip} from "@mui/material";
+import React from 'react';
+import _ from "lodash";
 import {transCSS} from "./cssUtils";
+import {Box, Checkbox, FormControlLabel, FormGroup, Tooltip} from "@mui/material";
 
-function SmartTextField(props) {
+function SmartCheckbox(props) {
+
   const {
     tabDatas,
     theCard,
-      showWhen,
-      state,
+    showWhen,
+    state,
     handleValueUpdate
   } = props;
   const isShown = React.useMemo(() => {
@@ -26,10 +27,11 @@ function SmartTextField(props) {
   const width = _.get(theData,'widthPx');
   const type = _.get(theData,'type');
   const theKey = _.get(theData,'name');
-  const defaultValue = _.get(theData,'defaultValue');
+  //const defaultValue = _.get(theData,'defaultValue');
 
-  const handleInput = React.useCallback((e)=>{
-    handleValueUpdate(theKey,e.target.value);
+  const handleChange = React.useCallback((e)=>{
+    console.log(e.target.checked);
+    handleValueUpdate(theKey,e.target.checked);
   },[handleValueUpdate,theKey]);
 
   const boxStyle = React.useMemo(()=>{
@@ -43,30 +45,28 @@ function SmartTextField(props) {
   },[width,style]);
 
   const  theValue = React.useMemo(() => {
-    const theText = defaultValue || '';
-    return _.get(state,['values',theKey],theText);
-  },[state,defaultValue]);
-
+    return _.get(state,['values',theKey]);
+  },[state]);
+/*
   React.useEffect(()=>{
     const v = _.get(state,['values',theKey]);
     if((v === undefined || v === null) && defaultValue !== undefined) {
       handleValueUpdate(theKey,defaultValue);
     }
   },[state,defaultValue,handleValueUpdate]);
-
+*/
   if(!isShown) return null;
   return <Box sx={boxStyle}>
-    <Tooltip title={label}>
-    <TextField
-        disabled={isReadOnly}
-        required={isRequired}
-        label={label}
-        type={type}
-        onInput={handleInput}
-        value={theValue}
-    />
-    </Tooltip>
+    <FormGroup>
+      <FormControlLabel
+          onChange={handleChange}
+          checked={theValue || false}
+          control={<Checkbox />}
+          disabled={isReadOnly}
+          required={isRequired}
+          label={label}
+      />
+    </FormGroup>
   </Box>;
 }
-
-export default SmartTextField;
+export default SmartCheckbox;

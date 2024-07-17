@@ -1,14 +1,21 @@
-import React, {useCallback} from 'react';
-import _ from 'lodash';
-import {Box, TextField, Tooltip} from "@mui/material";
+import React from 'react';
+import _ from "lodash";
 import {transCSS} from "./cssUtils";
+import {Box,
+    FormControl,
+  FormLabel,
+  FormControlLabel,
+  RadioGroup,
+  Radio,
+} from "@mui/material";
+import {values} from "lodash/object";
 
-function SmartTextField(props) {
+function SmartRadio(props) {
   const {
     tabDatas,
     theCard,
-      showWhen,
-      state,
+    showWhen,
+    state,
     handleValueUpdate
   } = props;
   const isShown = React.useMemo(() => {
@@ -24,13 +31,24 @@ function SmartTextField(props) {
   const theData  = _.get(tabDatas, domId);
   const label = _.get(theData,'caption');
   const width = _.get(theData,'widthPx');
-  const type = _.get(theData,'type');
   const theKey = _.get(theData,'name');
+  const theOptions = _.get(theData,'options');
   const defaultValue = _.get(theData,'defaultValue');
 
-  const handleInput = React.useCallback((e)=>{
+  const handleChange = React.useCallback((e)=>{
     handleValueUpdate(theKey,e.target.value);
   },[handleValueUpdate,theKey]);
+
+  const  theValue = React.useMemo(() => {
+    return _.get(state,['values',theKey],defaultValue);
+  },[state,defaultValue]);
+
+  React.useEffect(()=>{
+    const v = _.get(state,['values',theKey]);
+    if((v === undefined || v === null)&& defaultValue !== undefined) {
+      handleValueUpdate(theKey,defaultValue);
+    }
+  },[state,defaultValue,handleValueUpdate]);
 
   const boxStyle = React.useMemo(()=>{
     const sx= {
@@ -41,32 +59,20 @@ function SmartTextField(props) {
     };
     return sx;
   },[width,style]);
-
-  const  theValue = React.useMemo(() => {
-    const theText = defaultValue || '';
-    return _.get(state,['values',theKey],theText);
-  },[state,defaultValue]);
-
-  React.useEffect(()=>{
-    const v = _.get(state,['values',theKey]);
-    if((v === undefined || v === null) && defaultValue !== undefined) {
-      handleValueUpdate(theKey,defaultValue);
-    }
-  },[state,defaultValue,handleValueUpdate]);
-
   if(!isShown) return null;
   return <Box sx={boxStyle}>
-    <Tooltip title={label}>
-    <TextField
-        disabled={isReadOnly}
-        required={isRequired}
-        label={label}
-        type={type}
-        onInput={handleInput}
-        value={theValue}
-    />
-    </Tooltip>
-  </Box>;
+    <FormControl>
+      <FormLabel>{label}</FormLabel>
+      <RadioGroup
+          value={theValue}
+          onChange={handleChange}
+      >
+        {_.map(theOptions,(k,v) => {
+          return (<FormControlLabel value={v} key={k} control={<Radio />} label={k} />);
+        })}
+      </RadioGroup>
+    </FormControl>
+  </Box>
 }
 
-export default SmartTextField;
+export default SmartRadio;

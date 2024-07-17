@@ -7,9 +7,14 @@ function SmartLabelField(props) {
 
   const {
     tabDatas,
-    theCard
+    theCard,
+    showWhen,
+    state,
   } = props;
-
+  const isShown = React.useMemo(() => {
+    if(showWhen === undefined) return true;
+    return showWhen(state.values);
+  },[showWhen,state]);
   const domId = _.get(theCard, 'domId');
   const style = _.get(theCard, 'style');
   const theData  = _.get(tabDatas, domId);
@@ -20,6 +25,9 @@ function SmartLabelField(props) {
     }
     return {};
   },[style]);
+
+  if(!isShown) return null;
+
   return <Box sx={boxStyle}>
     <Typography>
       {label}

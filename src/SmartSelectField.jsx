@@ -53,6 +53,7 @@ function SmartSelectField(props) {
       }
       return _.get(state,['values',theKey]);
   },[state,theData,theKey]);
+
   const handleSelect = React.useCallback((e)=>{
     handleValueUpdate(theKey,e.target.value);
   },[handleValueUpdate,theKey]);

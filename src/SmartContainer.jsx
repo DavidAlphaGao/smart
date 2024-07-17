@@ -3,7 +3,7 @@ import _ from 'lodash';
 import {
   Box
 } from '@mui/material'
-import demo from './demo.json';
+import demo from './demo3.json';
 import SmartTab from "./SmartTab";
 import {getCalculators} from "./utils";
 
@@ -59,7 +59,14 @@ function SmartContainer(props) {
     dispatch((s) => {
       return _.chain(s)
           .cloneDeep()
-          .set(['values',k],v)
+          .thru((state)=> {
+            let keyPath = ['values',k];
+            if(_.isArray(k)){
+              keyPath = _.concat(['values'],k);
+            }
+             _.set(state,keyPath,v);
+            return state;
+          })
           .value();
     });
   },[dispatch]);
