@@ -3,9 +3,8 @@ import _ from 'lodash';
 import {
   Box
 } from '@mui/material'
-import demo from './demo3.json';
+import demo from './demo2.json';
 import SmartTab from "./SmartTab";
-import {getCalculators} from "./utils";
 
 const uiPaths = ["tables","rows","cells","cards"];
 

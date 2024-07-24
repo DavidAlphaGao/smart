@@ -8,6 +8,8 @@ import {buildShowWhen} from "./utils";
 import SmartDimensions from "./SmartDimensions";
 import SmartRadio from "./SmartRadio";
 import SmartCheckbox from "./SmartCheckbox";
+import SmartQuantity from "./SmartQuantity";
+import SmartTextArea from "./SmartTextArea";
 
 function SmartNode(props) {
   const {
@@ -45,10 +47,14 @@ function SmartNode(props) {
         return SmartSelectField;
       case 'dimensions':
         return SmartDimensions;
+      case 'quantities':
+        return SmartQuantity;
       case 'radiobuttons':
         return SmartRadio;
       case 'checkboxes':
         return SmartCheckbox;
+      case 'textarea':
+        return SmartTextArea;
       default:
         return null;
     }

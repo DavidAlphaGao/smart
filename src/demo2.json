@@ -1,0 +1,1016 @@
+{
+  "form": {
+    "tabDatas": [
+      {
+        "cards": [
+          {
+            "domId": "BD15QUh9",
+            "type": "select",
+            "elementType": "select",
+            "caption": "Size",
+            "name": "SIZE",
+            "dualNames": true,
+            "isReportable": 1,
+            "isSpecItem": 0,
+            "isClearValueWhenHidden": false,
+            "defaultValue": "UsvgPyVR07",
+            "calculator": "",
+            "options": {
+              "3.5 X 2": "3.5 X 2",
+              "Other": "Other"
+            },
+            "uniques": [
+              "UsvgPyVR07",
+              "kK0WmkA6tf"
+            ],
+            "values": {
+              "UsvgPyVR07": {
+                "label": "3.5 X 2",
+                "value": "3.5 X 2",
+                "image": ""
+              },
+              "kK0WmkA6tf": {
+                "label": "Other",
+                "value": "Other",
+                "image": ""
+              }
+            },
+            "isImaged": false,
+            "jsChange": "",
+            "widthPx": "auto"
+          },
+          {
+            "domId": "iS1FeZoW",
+            "type": "text",
+            "elementType": "text",
+            "caption": "Size Other",
+            "name": "SIZE_OTHER",
+            "isReportable": 1,
+            "isSpecItem": 0,
+            "isClearValueWhenHidden": false,
+            "defaultValue": "",
+            "calculator": "",
+            "widthPx": "120"
+          },
+          {
+            "domId": "4Ip0hprr",
+            "type": "select",
+            "elementType": "select",
+            "caption": "Paper",
+            "name": "PAPER",
+            "dualNames": true,
+            "isReportable": 1,
+            "isSpecItem": 0,
+            "isClearValueWhenHidden": false,
+            "defaultValue": "cfrQ5cSoCP",
+            "calculator": "",
+            "options": {
+              "Heavy: 14pt C2S (120# Gloss Cover)": "Heavy: 14pt C2S (120# Gloss Cover)",
+              "Heavy: 14pt Uncoated Cover (120# Uncoated Cover)": "Heavy: 14pt Uncoated Cover (120# Uncoated Cover)",
+              "Heavy: 16pt C2S (130# Gloss Cover)": "Heavy: 16pt C2S (130# Gloss Cover)",
+              "Specialty: 100# White Linen Cover (13pt)": "Specialty: 100# White Linen Cover (13pt)",
+              "Heavy: 16pt C1S (130# Gloss Cover)": "Heavy: 16pt C1S (130# Gloss Cover)",
+              "Other": "Other"
+            },
+            "uniques": [
+              "wT7uaDEkbi",
+              "cfrQ5cSoCP",
+              "qIIGHXdU96",
+              "7bniilmytH",
+              "iGOFU3cCz7",
+              "2F6s9Qequi"
+            ],
+            "values": {
+              "wT7uaDEkbi": {
+                "label": "Heavy: 14pt C2S (120# Gloss Cover)",
+                "value": "Heavy: 14pt C2S (120# Gloss Cover)",
+                "image": ""
+              },
+              "cfrQ5cSoCP": {
+                "label": "Heavy: 14pt Uncoated Cover (120# Uncoated Cover)",
+                "value": "Heavy: 14pt Uncoated Cover (120# Uncoated Cover)",
+                "image": ""
+              },
+              "qIIGHXdU96": {
+                "label": "Heavy: 16pt C2S (130# Gloss Cover)",
+                "value": "Heavy: 16pt C2S (130# Gloss Cover)",
+                "image": ""
+              },
+              "7bniilmytH": {
+                "label": "Specialty: 100# White Linen Cover (13pt)",
+                "value": "Specialty: 100# White Linen Cover (13pt)",
+                "image": ""
+              },
+              "iGOFU3cCz7": {
+                "label": "Heavy: 16pt C1S (130# Gloss Cover)",
+                "value": "Heavy: 16pt C1S (130# Gloss Cover)",
+                "image": ""
+              },
+              "2F6s9Qequi": {
+                "label": "Other",
+                "value": "Other",
+                "image": ""
+              }
+            },
+            "isImaged": false,
+            "jsChange": "",
+            "widthPx": "auto"
+          },
+          {
+            "domId": "hWcPhEwe",
+            "type": "text",
+            "elementType": "text",
+            "caption": "Paper Other",
+            "name": "PAPER_OTHER",
+            "isReportable": 1,
+            "isSpecItem": 0,
+            "isClearValueWhenHidden": false,
+            "defaultValue": "",
+            "calculator": "",
+            "widthPx": "120"
+          },
+          {
+            "domId": "Tx9fOrVs",
+            "type": "select",
+            "elementType": "select",
+            "caption": "Color",
+            "name": "COLOR",
+            "dualNames": true,
+            "isReportable": 1,
+            "isSpecItem": 0,
+            "isClearValueWhenHidden": false,
+            "defaultValue": "GcHXUT90A9",
+            "calculator": "",
+            "options": {
+              "4/4 (Full Color Both Sides)": "4/4 (Full Color Both Sides)",
+              "4/1 (Full Color Front / B&W Back)": "4/1 (Full Color Front / B&W Back)",
+              "4/0 (Full Color Front Side)": "4/0 (Full Color Front Side)",
+              "Other": "Other"
+            },
+            "uniques": [
+              "X4D9ak7EZx",
+              "GcHXUT90A9",
+              "8KFMuLL4kw",
+              "ydzQhWdKnu"
+            ],
+            "values": {
+              "X4D9ak7EZx": {
+                "label": "4/4 (Full Color Both Sides)",
+                "value": "4/4 (Full Color Both Sides)",
+                "image": ""
+              },
+              "GcHXUT90A9": {
+                "label": "4/1 (Full Color Front / B&W Back)",
+                "value": "4/1 (Full Color Front / B&W Back)",
+                "image": ""
+              },
+              "8KFMuLL4kw": {
+                "label": "4/0 (Full Color Front Side)",
+                "value": "4/0 (Full Color Front Side)",
+                "image": ""
+              },
+              "ydzQhWdKnu": {
+                "label": "Other",
+                "value": "Other",
+                "image": ""
+              }
+            },
+            "isImaged": false,
+            "jsChange": "",
+            "widthPx": "auto"
+          },
+          {
+            "domId": "NoEOraPK",
+            "type": "text",
+            "elementType": "text",
+            "caption": "Color Other",
+            "name": "COLOR_OTHER",
+            "isReportable": 1,
+            "isSpecItem": 0,
+            "isClearValueWhenHidden": false,
+            "defaultValue": "",
+            "calculator": "",
+            "widthPx": "120"
+          },
+          {
+            "domId": "FQ3CcfaW",
+            "type": "select",
+            "elementType": "select",
+            "caption": "Coating",
+            "name": "COATING",
+            "dualNames": true,
+            "isReportable": 1,
+            "isSpecItem": 0,
+            "isClearValueWhenHidden": false,
+            "defaultValue": "8ApCKHo4vi",
+            "calculator": "",
+            "options": {
+              "UV 2 Sides (Super Hi-Gloss Coating)": "UV 2 Sides (Super Hi-Gloss Coating)",
+              "UV 1 Side - Front (Super Hi-Gloss Coating)": "UV 1 Side - Front (Super Hi-Gloss Coating)",
+              "Uncoated": "Uncoated",
+              "Spot UV 2 Side": "Spot UV 2 Side",
+              "Other": "Other"
+            },
+            "uniques": [
+              "QOzWPb1QAq",
+              "8ApCKHo4vi",
+              "XLIJ1ioDtn",
+              "1VTSTG1aD3",
+              "hAAIllErF0"
+            ],
+            "values": {
+              "QOzWPb1QAq": {
+                "label": "UV 2 Sides (Super Hi-Gloss Coating)",
+                "value": "UV 2 Sides (Super Hi-Gloss Coating)",
+                "image": ""
+              },
+              "8ApCKHo4vi": {
+                "label": "UV 1 Side - Front (Super Hi-Gloss Coating)",
+                "value": "UV 1 Side - Front (Super Hi-Gloss Coating)",
+                "image": ""
+              },
+              "XLIJ1ioDtn": {
+                "label": "Uncoated",
+                "value": "Uncoated",
+                "image": ""
+              },
+              "1VTSTG1aD3": {
+                "label": "Spot UV 2 Side",
+                "value": "Spot UV 2 Side",
+                "image": ""
+              },
+              "hAAIllErF0": {
+                "label": "Other",
+                "value": "Other",
+                "image": ""
+              }
+            },
+            "isImaged": false,
+            "jsChange": "",
+            "widthPx": "auto"
+          },
+          {
+            "domId": "9ZR1NsSu",
+            "type": "text",
+            "elementType": "text",
+            "caption": "Coating Other",
+            "name": "COATING_OTHER",
+            "isReportable": 1,
+            "isSpecItem": 0,
+            "isClearValueWhenHidden": false,
+            "defaultValue": "",
+            "calculator": "",
+            "widthPx": "120"
+          },
+          {
+            "domId": "Pk98bnLx",
+            "type": "select",
+            "elementType": "select",
+            "caption": "Turnaround",
+            "name": "TURNAROUND",
+            "dualNames": true,
+            "isReportable": 1,
+            "isSpecItem": 0,
+            "isClearValueWhenHidden": false,
+            "defaultValue": "FsbI8J7h34",
+            "calculator": "",
+            "options": {
+              "3": "3",
+              "5": "5",
+              "Other": "Other"
+            },
+            "uniques": [
+              "FsbI8J7h34",
+              "hg3fxepLsF",
+              "JhZaGBJXDP"
+            ],
+            "values": {
+              "FsbI8J7h34": {
+                "label": "3",
+                "value": "3",
+                "image": ""
+              },
+              "hg3fxepLsF": {
+                "label": "5",
+                "value": "5",
+                "image": ""
+              },
+              "JhZaGBJXDP": {
+                "label": "Other",
+                "value": "Other",
+                "image": ""
+              }
+            },
+            "isImaged": false,
+            "jsChange": "",
+            "widthPx": "auto"
+          },
+          {
+            "domId": "hHVTPHbD",
+            "type": "text",
+            "elementType": "text",
+            "caption": "Turnaround Other",
+            "name": "TURNAROUND_OTHER",
+            "isReportable": 1,
+            "isSpecItem": 0,
+            "isClearValueWhenHidden": false,
+            "defaultValue": "",
+            "calculator": "",
+            "widthPx": "120"
+          },
+          {
+            "domId": "X33yfTPq",
+            "type": "select",
+            "elementType": "select",
+            "caption": "Finishing",
+            "name": "FINISHING",
+            "dualNames": true,
+            "isReportable": 1,
+            "isSpecItem": 0,
+            "isClearValueWhenHidden": false,
+            "defaultValue": "nZl9T9J0pR",
+            "calculator": "",
+            "options": {
+              "No Rounded Corners": "No Rounded Corners",
+              "1/8\" Rounded Corners": "1/8\" Rounded Corners",
+              "Other": "Other"
+            },
+            "uniques": [
+              "nZl9T9J0pR",
+              "z1dqQ5Upre",
+              "DSrRT7GAcy"
+            ],
+            "values": {
+              "nZl9T9J0pR": {
+                "label": "No Rounded Corners",
+                "value": "No Rounded Corners",
+                "image": ""
+              },
+              "z1dqQ5Upre": {
+                "label": "1/8\" Rounded Corners",
+                "value": "1/8\" Rounded Corners",
+                "image": ""
+              },
+              "DSrRT7GAcy": {
+                "label": "Other",
+                "value": "Other",
+                "image": ""
+              }
+            },
+            "isImaged": false,
+            "jsChange": "",
+            "widthPx": "auto"
+          },
+          {
+            "domId": "cyM3Dfve",
+            "type": "text",
+            "elementType": "text",
+            "caption": "Finishing Other",
+            "name": "FINISHING_OTHER",
+            "isReportable": 1,
+            "isSpecItem": 0,
+            "isClearValueWhenHidden": false,
+            "defaultValue": "",
+            "calculator": "",
+            "widthPx": "120"
+          },
+          {
+            "domId": "JwcTv9UO",
+            "type": "select",
+            "elementType": "select",
+            "caption": "Quantity",
+            "name": "QUANTITY",
+            "dualNames": true,
+            "isReportable": 1,
+            "isSpecItem": 0,
+            "isClearValueWhenHidden": false,
+            "defaultValue": "cS0sdwOqC3",
+            "calculator": "",
+            "options": {
+              "250": "250",
+              "500": "500",
+              "750": "750",
+              "1000": "1000",
+              "1500": "1500",
+              "2000": "2000",
+              "2500": "2500",
+              "3000": "3000",
+              "4000": "4000",
+              "5000": "5000",
+              "7500": "7500",
+              "10000": "10000",
+              "15000": "15000",
+              "20000": "20000",
+              "25000": "25000",
+              "30000": "30000",
+              "40000": "40000",
+              "50000": "50000",
+              "Other": "Other"
+            },
+            "uniques": [
+              "cS0sdwOqC3",
+              "tJPh9NDPSq",
+              "JBNZG2tck4",
+              "kvbSqLmiP0",
+              "gois16Mvni",
+              "PPk8nqchJ4",
+              "uK7UowJWDE",
+              "wfcaB3VC8l",
+              "HqTuMI3hUA",
+              "B7Mc7Warw1",
+              "qRzNcFCm26",
+              "0PuIfI3AtL",
+              "LEFyu4E5kW",
+              "MwebhazuJZ",
+              "hFnRMS026y",
+              "0sCXXwGSoJ",
+              "HrS1QKzJWw",
+              "ZC6zzum7hw",
+              "5k70TxrWz5"
+            ],
+            "values": {
+              "cS0sdwOqC3": {
+                "label": "250",
+                "value": "250",
+                "image": ""
+              },
+              "tJPh9NDPSq": {
+                "label": "500",
+                "value": "500",
+                "image": ""
+              },
+              "JBNZG2tck4": {
+                "label": "750",
+                "value": "750",
+                "image": ""
+              },
+              "kvbSqLmiP0": {
+                "label": "1000",
+                "value": "1000",
+                "image": ""
+              },
+              "gois16Mvni": {
+                "label": "1500",
+                "value": "1500",
+                "image": ""
+              },
+              "PPk8nqchJ4": {
+                "label": "2000",
+                "value": "2000",
+                "image": ""
+              },
+              "uK7UowJWDE": {
+                "label": "2500",
+                "value": "2500",
+                "image": ""
+              },
+              "wfcaB3VC8l": {
+                "label": "3000",
+                "value": "3000",
+                "image": ""
+              },
+              "HqTuMI3hUA": {
+                "label": "4000",
+                "value": "4000",
+                "image": ""
+              },
+              "B7Mc7Warw1": {
+                "label": "5000",
+                "value": "5000",
+                "image": ""
+              },
+              "qRzNcFCm26": {
+                "label": "7500",
+                "value": "7500",
+                "image": ""
+              },
+              "0PuIfI3AtL": {
+                "label": "10000",
+                "value": "10000",
+                "image": ""
+              },
+              "LEFyu4E5kW": {
+                "label": "15000",
+                "value": "15000",
+                "image": ""
+              },
+              "MwebhazuJZ": {
+                "label": "20000",
+                "value": "20000",
+                "image": ""
+              },
+              "hFnRMS026y": {
+                "label": "25000",
+                "value": "25000",
+                "image": ""
+              },
+              "0sCXXwGSoJ": {
+                "label": "30000",
+                "value": "30000",
+                "image": ""
+              },
+              "HrS1QKzJWw": {
+                "label": "40000",
+                "value": "40000",
+                "image": ""
+              },
+              "ZC6zzum7hw": {
+                "label": "50000",
+                "value": "50000",
+                "image": ""
+              },
+              "5k70TxrWz5": {
+                "label": "Other",
+                "value": "Other",
+                "image": ""
+              }
+            },
+            "isImaged": false,
+            "jsChange": "",
+            "widthPx": "auto"
+          },
+          {
+            "domId": "bR8EyIP6",
+            "type": "text",
+            "elementType": "text",
+            "caption": "Quantity Other",
+            "name": "QUANTITY_OTHER",
+            "isReportable": 1,
+            "isSpecItem": 0,
+            "isClearValueWhenHidden": false,
+            "defaultValue": "",
+            "calculator": "",
+            "widthPx": "120"
+          }
+        ],
+        "data": {
+          "title": "New Tab"
+        }
+      }
+    ],
+    "tabUis": [
+      {
+        "tables": [
+          {
+            "rows": [
+              {
+                "cells": [
+                  {
+                    "cards": [
+                      {
+                        "domId": "BD15QUh9",
+                        "isRequired": false,
+                        "hideLabel": false,
+                        "isHidden": false,
+                        "isHiddenSplr": false,
+                        "style": {
+                          "fontWeight": "normal",
+                          "fontColor": "black",
+                          "bgColor": ""
+                        },
+                        "maxHeight": "50",
+                        "maxWidth": "50",
+                        "isReadOnly": false,
+                        "zIndex": 3,
+                        "showWhen": [],
+                        "showUsing": "and"
+                      },
+                      {
+                        "domId": "iS1FeZoW",
+                        "hideLabel": false,
+                        "isRequired": false,
+                        "isHidden": false,
+                        "isHiddenSplr": false,
+                        "style": {
+                          "fontWeight": "normal",
+                          "fontColor": "black",
+                          "bgColor": ""
+                        },
+                        "isReadOnly": false,
+                        "showWhen": [
+                          {
+                            "type": "item",
+                            "cellCardDomId": "BD15QUh9",
+                            "reportingName": "SIZE",
+                            "operation": "eq",
+                            "value": "Other"
+                          }
+                        ],
+                        "showUsing": "and"
+                      }
+                    ],
+                    "ui": {
+                      "domId": "TsBDlLXF",
+                      "width": "745px",
+                      "placement": "relative"
+                    }
+                  }
+                ],
+                "ui": {
+                  "domId": "TAXbaA8w",
+                  "cellsPerRow": 1,
+                  "labelPos": "left",
+                  "width": "745px"
+                }
+              },
+              {
+                "cells": [
+                  {
+                    "cards": [
+                      {
+                        "domId": "4Ip0hprr",
+                        "isRequired": false,
+                        "hideLabel": false,
+                        "isHidden": false,
+                        "isHiddenSplr": false,
+                        "style": {
+                          "fontWeight": "normal",
+                          "fontColor": "black",
+                          "bgColor": ""
+                        },
+                        "maxHeight": "50",
+                        "maxWidth": "50",
+                        "isReadOnly": false,
+                        "zIndex": 5,
+                        "showWhen": [],
+                        "showUsing": "and"
+                      },
+                      {
+                        "domId": "hWcPhEwe",
+                        "hideLabel": false,
+                        "isRequired": false,
+                        "isHidden": false,
+                        "isHiddenSplr": false,
+                        "style": {
+                          "fontWeight": "normal",
+                          "fontColor": "black",
+                          "bgColor": ""
+                        },
+                        "isReadOnly": false,
+                        "showWhen": [
+                          {
+                            "type": "item",
+                            "cellCardDomId": "4Ip0hprr",
+                            "reportingName": "PAPER",
+                            "operation": "eq",
+                            "value": "Other"
+                          }
+                        ],
+                        "showUsing": "and"
+                      }
+                    ],
+                    "ui": {
+                      "domId": "KpE9dtwb",
+                      "width": "745px",
+                      "placement": "relative"
+                    }
+                  }
+                ],
+                "ui": {
+                  "domId": "WLdkAK0J",
+                  "cellsPerRow": 1,
+                  "labelPos": "left",
+                  "width": "745px"
+                }
+              },
+              {
+                "cells": [
+                  {
+                    "cards": [
+                      {
+                        "domId": "Tx9fOrVs",
+                        "isRequired": false,
+                        "hideLabel": false,
+                        "isHidden": false,
+                        "isHiddenSplr": false,
+                        "style": {
+                          "fontWeight": "normal",
+                          "fontColor": "black",
+                          "bgColor": ""
+                        },
+                        "maxHeight": "50",
+                        "maxWidth": "50",
+                        "isReadOnly": false,
+                        "zIndex": 6,
+                        "showWhen": [],
+                        "showUsing": "and"
+                      },
+                      {
+                        "domId": "NoEOraPK",
+                        "hideLabel": false,
+                        "isRequired": false,
+                        "isHidden": false,
+                        "isHiddenSplr": false,
+                        "style": {
+                          "fontWeight": "normal",
+                          "fontColor": "black",
+                          "bgColor": ""
+                        },
+                        "isReadOnly": false,
+                        "showWhen": [
+                          {
+                            "type": "item",
+                            "cellCardDomId": "Tx9fOrVs",
+                            "reportingName": "COLOR",
+                            "operation": "eq",
+                            "value": "Other"
+                          }
+                        ],
+                        "showUsing": "and"
+                      }
+                    ],
+                    "ui": {
+                      "domId": "svwJdpVn",
+                      "width": "745px",
+                      "placement": "relative"
+                    }
+                  }
+                ],
+                "ui": {
+                  "domId": "6EwPfXld",
+                  "cellsPerRow": 1,
+                  "labelPos": "left",
+                  "width": "745px"
+                }
+              },
+              {
+                "cells": [
+                  {
+                    "cards": [
+                      {
+                        "domId": "FQ3CcfaW",
+                        "isRequired": false,
+                        "hideLabel": false,
+                        "isHidden": false,
+                        "isHiddenSplr": false,
+                        "style": {
+                          "fontWeight": "normal",
+                          "fontColor": "black",
+                          "bgColor": ""
+                        },
+                        "maxHeight": "50",
+                        "maxWidth": "50",
+                        "isReadOnly": false,
+                        "zIndex": 7,
+                        "showWhen": [],
+                        "showUsing": "and"
+                      },
+                      {
+                        "domId": "9ZR1NsSu",
+                        "hideLabel": false,
+                        "isRequired": false,
+                        "isHidden": false,
+                        "isHiddenSplr": false,
+                        "style": {
+                          "fontWeight": "normal",
+                          "fontColor": "black",
+                          "bgColor": ""
+                        },
+                        "isReadOnly": false,
+                        "showWhen": [
+                          {
+                            "type": "item",
+                            "cellCardDomId": "FQ3CcfaW",
+                            "reportingName": "COATING",
+                            "operation": "eq",
+                            "value": "Other"
+                          }
+                        ],
+                        "showUsing": "and"
+                      }
+                    ],
+                    "ui": {
+                      "domId": "GNS611QF",
+                      "width": "745px",
+                      "placement": "relative"
+                    }
+                  }
+                ],
+                "ui": {
+                  "domId": "hXFMHBdd",
+                  "cellsPerRow": 1,
+                  "labelPos": "left",
+                  "width": "745px"
+                }
+              },
+              {
+                "cells": [
+                  {
+                    "cards": [
+                      {
+                        "domId": "Pk98bnLx",
+                        "isRequired": false,
+                        "hideLabel": false,
+                        "isHidden": false,
+                        "isHiddenSplr": false,
+                        "style": {
+                          "fontWeight": "normal",
+                          "fontColor": "black",
+                          "bgColor": ""
+                        },
+                        "maxHeight": "50",
+                        "maxWidth": "50",
+                        "isReadOnly": false,
+                        "zIndex": 8,
+                        "showWhen": [],
+                        "showUsing": "and"
+                      },
+                      {
+                        "domId": "hHVTPHbD",
+                        "hideLabel": false,
+                        "isRequired": false,
+                        "isHidden": false,
+                        "isHiddenSplr": false,
+                        "style": {
+                          "fontWeight": "normal",
+                          "fontColor": "black",
+                          "bgColor": ""
+                        },
+                        "isReadOnly": false,
+                        "showWhen": [
+                          {
+                            "type": "item",
+                            "cellCardDomId": "Pk98bnLx",
+                            "reportingName": "TURNAROUND",
+                            "operation": "eq",
+                            "value": "Other"
+                          }
+                        ],
+                        "showUsing": "and"
+                      }
+                    ],
+                    "ui": {
+                      "domId": "saMPbsW3",
+                      "width": "745px",
+                      "placement": "relative"
+                    }
+                  }
+                ],
+                "ui": {
+                  "domId": "8T4gQHIH",
+                  "cellsPerRow": 1,
+                  "labelPos": "left",
+                  "width": "745px"
+                }
+              },
+              {
+                "cells": [
+                  {
+                    "cards": [
+                      {
+                        "domId": "X33yfTPq",
+                        "isRequired": false,
+                        "hideLabel": false,
+                        "isHidden": false,
+                        "isHiddenSplr": false,
+                        "style": {
+                          "fontWeight": "normal",
+                          "fontColor": "black",
+                          "bgColor": ""
+                        },
+                        "maxHeight": "50",
+                        "maxWidth": "50",
+                        "isReadOnly": false,
+                        "zIndex": 9,
+                        "showWhen": [],
+                        "showUsing": "and"
+                      },
+                      {
+                        "domId": "cyM3Dfve",
+                        "hideLabel": false,
+                        "isRequired": false,
+                        "isHidden": false,
+                        "isHiddenSplr": false,
+                        "style": {
+                          "fontWeight": "normal",
+                          "fontColor": "black",
+                          "bgColor": ""
+                        },
+                        "isReadOnly": false,
+                        "zIndex": 16,
+                        "showWhen": [
+                          {
+                            "type": "item",
+                            "cellCardDomId": "X33yfTPq",
+                            "reportingName": "FINISHING",
+                            "operation": "eq",
+                            "value": "Other"
+                          }
+                        ],
+                        "showUsing": "and"
+                      }
+                    ],
+                    "ui": {
+                      "domId": "qO4PfUav",
+                      "width": "745px",
+                      "placement": "relative"
+                    }
+                  }
+                ],
+                "ui": {
+                  "domId": "cz7QsbaP",
+                  "cellsPerRow": 1,
+                  "labelPos": "left",
+                  "width": "745px"
+                }
+              },
+              {
+                "cells": [
+                  {
+                    "cards": [
+                      {
+                        "domId": "JwcTv9UO",
+                        "isRequired": false,
+                        "hideLabel": false,
+                        "isHidden": false,
+                        "isHiddenSplr": false,
+                        "style": {
+                          "fontWeight": "normal",
+                          "fontColor": "black",
+                          "bgColor": ""
+                        },
+                        "maxHeight": "50",
+                        "maxWidth": "50",
+                        "isReadOnly": false,
+                        "zIndex": 13,
+                        "showWhen": [],
+                        "showUsing": "and"
+                      },
+                      {
+                        "domId": "bR8EyIP6",
+                        "hideLabel": false,
+                        "isRequired": false,
+                        "isHidden": false,
+                        "isHiddenSplr": false,
+                        "style": {
+                          "fontWeight": "normal",
+                          "fontColor": "black",
+                          "bgColor": ""
+                        },
+                        "isReadOnly": false,
+                        "zIndex": 17,
+                        "showWhen": [
+                          {
+                            "type": "item",
+                            "cellCardDomId": "JwcTv9UO",
+                            "reportingName": "QUANTITY",
+                            "operation": "eq",
+                            "value": "Other"
+                          }
+                        ],
+                        "showUsing": "and"
+                      }
+                    ],
+                    "ui": {
+                      "domId": "BtlULW6J",
+                      "width": "745px",
+                      "placement": "relative"
+                    }
+                  }
+                ],
+                "ui": {
+                  "domId": "TTQBbvk2",
+                  "cellsPerRow": 1,
+                  "labelPos": "left",
+                  "width": "745px"
+                }
+              },
+              {
+                "cells": [
+                  {
+                    "cards": [],
+                    "ui": {
+                      "domId": "CIxoMFmF",
+                      "width": "745px",
+                      "placement": "relative"
+                    }
+                  }
+                ],
+                "ui": {
+                  "domId": "edXX9BrO",
+                  "cellsPerRow": 1,
+                  "labelPos": "left",
+                  "width": "745px"
+                }
+              }
+            ],
+            "ui": {}
+          }
+        ],
+        "ui": {
+          "domId": "851fD2lw",
+          "isHidden": false,
+          "isHiddenSplr": false,
+          "labelPos": "left",
+          "cellsPerRow": 1,
+          "showWhen": [],
+          "showUsing": "and",
+          "lastZIndex": 17
+        }
+      }
+    ],
+    "ui": {
+      "productOnLoadScript": ""
+    }
+  }
+}
